@@ -17,9 +17,13 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  # For details on connection pooling, see Rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  user: <%= ENV["TASK_MANAGER_DB_USERNAME"] %>
+  password: <%= ENV["TASK_MANAGER_DB_PASSWORD"] %>
+  host: <%= ENV["TASK_MANAGER_DB_HOSTNAME"] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  port: <%= ENV["TASK_MANAGER_DB_PORT"] %>
+  wait_timeout: 900 # 15 minutes.
+  timeout: 5000 # 5 seconds.
 
 development:
   <<: *default
