@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on('ready page:change', function() {
 
     "use strict"; // Start of use strict
 

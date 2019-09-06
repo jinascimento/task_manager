@@ -1,5 +1,5 @@
-const body = $('body');
-const html = $('html');
+var body = $('body');
+var html = $('html');
 
 function quixSettings({version, layout, navheaderBg, headerBg, sidebarStyle, sidebarBg, sidebarPosition, headerPosition, containerLayout, direction}) {
     this.version = version || "light";

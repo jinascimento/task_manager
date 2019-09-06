@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).on('ready page:change', function() {
 
     $(function () {
         var chart = c3.generate({

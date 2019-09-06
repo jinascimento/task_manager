@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('ready page:change', function() {
 
     // <!--basic line echarts init-->
  

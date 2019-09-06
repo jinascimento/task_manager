@@ -1,5 +1,5 @@
 
-$(document).ready(function() {
+$(document).on('ready page:change', function() {
 
     // Realtime Rickshaw Chart
     if ($('#rickshaw-realtime').length != 0) {

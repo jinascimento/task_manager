@@ -424,7 +424,7 @@ let dataSet = [
     }
     
     /* Initialise the table with the required column ordering data types */
-    $(document).ready(function() {
+    $(document).on('ready page:change', function() {
         $('#example-plugin-3').DataTable( {
             "columns": [
                 null,

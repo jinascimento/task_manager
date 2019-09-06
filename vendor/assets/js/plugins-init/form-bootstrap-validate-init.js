@@ -1,7 +1,7 @@
 (function($) {
     'use strict';
 
-    $(document).ready(function() {
+    $(document).on('ready page:change', function() {
         $(".bs-submit").click(function() {
       
           //Fetch form to apply custom Bootstrap validation

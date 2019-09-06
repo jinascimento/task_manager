@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('ready page:change', function() {
 	$('.card-gallery-wrapper').magnificPopup({
 		delegate: '.card-footer a',
 		type: 'image',
