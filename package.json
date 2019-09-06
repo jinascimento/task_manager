@@ -1,5 +1,11 @@
 {
   "name": "task_manager",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "chart.js": "^2.8.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jhonatan I. <jhonatan-nascimento94@hotmail.com>",
+  "license": "MIT"
 }
