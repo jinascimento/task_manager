@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Task Manager</title>
+    <%= favicon_link_tag 'favicon.png', sizes: '16x16' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="h-100">
+
+  <!--*******************
+      Preloader start
+  ********************-->
+    <div id="preloader">
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+        </svg>
+      </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+
+
+
+    <div class="login-form-bg h-100">
+      <div class="container h-100">
+        <div class="row justify-content-center h-100">
+          <div class="col-xl-6">
+            <div class="form-input-content">
+              <div class="card login-form mb-0">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= javascript_include_tag 'common/common.min', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'custom.min', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'settings', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'gleek', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'styleSwitcher', "data-turbolinks-track" => true %>
+
+  </body>
+</html>
