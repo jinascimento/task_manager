@@ -32,5 +32,8 @@ Rails.application.config.assets.precompile += %w(
   pg-calendar/js/pignose.calendar.min.js
   chartist/js/chartist.min.js
   chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js
+  jqueryui/js/jquery-ui.min.js
+  fullcalendar/js/fullcalendar.min.js
+  plugins-init/fullcalendar-init.js
   dashboard/dashboard-1
 )
