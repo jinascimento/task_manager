@@ -1,0 +1,6 @@
+$('.calendar').fullCalendar(
+    'renderTask',
+    $.parseJSON("<%=j render(@task, format: :json).html_safe %>"),
+    true
+);
+$('.modal').modal('hide');

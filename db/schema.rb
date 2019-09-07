@@ -25,7 +25,9 @@ ActiveRecord::Schema.define(version: 2019_09_06_182709) do
     t.integer "status"
     t.string "title"
     t.string "description"
-    t.datetime "date"
+    t.datetime "start"
+    t.datetime "end"
+    t.string "color"
     t.integer "priority"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
