@@ -17,4 +17,5 @@
 //= require moment
 //= require fullcalendar
 //= require daterangepicker
+//= require fullcalendar/lang/pt-br
 //= require_tree .

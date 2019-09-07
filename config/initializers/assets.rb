@@ -36,4 +36,14 @@ Rails.application.config.assets.precompile += %w(
   fullcalendar/js/fullcalendar.min.js
   plugins-init/fullcalendar-init.js
   dashboard/dashboard-1
+  fullcalendar/lang/pt-br.js
+  bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js
+  clockpicker/dist/jquery-clockpicker.min.js
+  jquery-asColorPicker-master/libs/jquery-asColor.js
+  jquery-asColorPicker-master/libs/jquery-asGradient.js
+  jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js
+  bootstrap-datepicker/bootstrap-datepicker.min.js
+  timepicker/bootstrap-timepicker.min.js
+  bootstrap-daterangepicker/daterangepicker.js
+  plugins-init/form-pickers-init.js
 )

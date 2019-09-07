@@ -407,6 +407,7 @@
       ***********************************-->
       <div class="content-body">
         <%= yield %>
+        <div id='remote_container'></div>
       </div>
       <div class="footer">
         <div class="copyright">
@@ -432,5 +433,18 @@
     <%= javascript_include_tag 'chartist-plugin-tooltips/js/chartist-plugin-tooltip.min', "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'jqueryui/js/jquery-ui.min', "data-turbolinks-track" => true %>
     <%= javascript_include_tag 'fullcalendar/js/fullcalendar.min', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'clockpicker/dist/jquery-clockpicker.min.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'jquery-asColorPicker-master/libs/jquery-asColor.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'jquery-asColorPicker-master/libs/jquery-asGradient.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'bootstrap-datepicker/bootstrap-datepicker.min.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'timepicker/bootstrap-timepicker.min.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'bootstrap-daterangepicker/daterangepicker.js', "data-turbolinks-track" => true %>
+    <%= javascript_include_tag 'plugins-init/form-pickers-init.js' %>
+    <%#= javascript_include_tag 'fullcalendar/lang/pt-br', "data-turbolinks-track" => true %>
+
+
+
   </body>
 </html>
