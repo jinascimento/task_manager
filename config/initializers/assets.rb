@@ -45,5 +45,5 @@ Rails.application.config.assets.precompile += %w(
   bootstrap-datepicker/bootstrap-datepicker.min.js
   timepicker/bootstrap-timepicker.min.js
   bootstrap-daterangepicker/daterangepicker.js
-  plugins-init/form-pickers-init.js
+
 )

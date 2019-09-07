@@ -17,10 +17,11 @@ initialize_calendar = function() {
 
             select: function(start, end) {
                 $.getScript('/tasks/new', function() {
-                    $('#event_date_range').val(moment(start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(end).format("MM/DD/YYYY HH:mm"))
+
+                    $('#event_date_range').val(moment(start).format("DD/MM/YYYY HH:mm") + ' - ' + moment(end).format("DD/MM/YYYY HH:mm"));
                     date_range_picker();
-                    $('.start_hidden').val(moment(start).format('YYYY-MM-DD HH:mm'));
-                    $('.end_hidden').val(moment(end).format('YYYY-MM-DD HH:mm'));
+                    $('.start_hidden').val(moment(start).format('DD-MM-YYYY HH:mm'));
+                    $('.end_hidden').val(moment(end).format('DD-MM-YYYY HH:mm'));
                 });
 
                 calendar.fullCalendar('unselect');
@@ -44,10 +45,11 @@ initialize_calendar = function() {
 
             eventClick: function(task, jsEvent, view) {
                 $.getScript(task.edit_url, function() {
-                    $('#event_date_range').val(moment(task.start).format("MM/DD/YYYY HH:mm") + ' - ' + moment(task.end).format("MM/DD/YYYY HH:mm"))
+                    $('#task_date_range').val(moment(task.start).format("DD/MM/YYYY HH:mm") + ' - ' + moment(task.end).format("DD/MM/YYYY HH:mm"));
                     date_range_picker();
-                    $('.start_hidden').val(moment(task.start).format('YYYY-MM-DD HH:mm'));
-                    $('.end_hidden').val(moment(task.end).format('YYYY-MM-DD HH:mm'));
+                    debugger
+                    $('.start_hidden').val(moment(task.start).format('DD-MM-YYYY HH:mm'));
+                    $('.end_hidden').val(moment(task.end).format('DD-MM-YYYY HH:mm'));
                 });
             }
         });
