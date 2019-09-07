@@ -6,9 +6,8 @@
         </div>
         <div class="form-group">
           <%= f.label 'Período' %>
-          <%= f.text_field :date_range, class: "form-control input-sm input-daterange-datepicker" %>
+          <%= f.text_field :date_range, class: "form-control input-sm  date-range-picker" %>
         </div>
-    <input value="2019-09-03 00:00" class="hidden form-control input-sm start_hidden" type="hidden" name="event[start]" id="event_start">
         <div class="form-group">
           <%= f.hidden_field :start, value: Date.today, class: 'form-control input-sm start_hidden' %>
           <%= f.hidden_field :end, value: Date.today, class: 'form-control input-sm end_hidden' %>
@@ -29,4 +28,5 @@
     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
   </div>
   <% end %>
-<%= javascript_include_tag 'plugins-init/form-pickers-init.js' %>
+<%#= javascript_include_tag 'plugins-init/form-pickers-init.js' %>
+<%#= javascript_include_tag 'date_range_picker' %>
