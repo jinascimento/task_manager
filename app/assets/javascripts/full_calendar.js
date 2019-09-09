@@ -47,7 +47,6 @@ initialize_calendar = function() {
                 $.getScript(task.edit_url, function() {
                     $('#task_date_range').val(moment(task.start).format("DD/MM/YYYY HH:mm") + ' - ' + moment(task.end).format("DD/MM/YYYY HH:mm"));
                     date_range_picker();
-                    debugger
                     $('.start_hidden').val(moment(task.start).format('DD-MM-YYYY HH:mm'));
                     $('.end_hidden').val(moment(task.end).format('DD-MM-YYYY HH:mm'));
                 });
