@@ -5,14 +5,22 @@
           <%= f.text_field :title, class: 'form-control form-control-sm', required: true %>
         </div>
         <div class="form-group">
+          <%= f.label 'Descrição' %>
+          <%= f.text_area :description, class: 'form-control form-control-sm h-150px', rows: 6, required: true %>
+        </div>
+        <div class="form-group">
+          <%= f.label 'Responsável' %>
+          <%= f.text_field :responsible_id, class: 'form-control form-control-sm h-150px', rows: 6, required: true %>
+        </div>
+        <div class="form-group">
           <%= f.label 'Período' %>
           <%= f.text_field :date_range, class: "form-control input-sm  date-range-picker", id: 'task_date_range' %>
         </div>
         <div class="form-group">
           <%= f.hidden_field :start, value: (f.object.start.present? ? f.object.start.strftime('%d/%m/%Y:%M:%H') : Date.today.strftime('%d/%m/%Y:%M:%H')), class: 'form-control input-sm start_hidden' %>
           <%= f.hidden_field :end, value: (f.object.end.present? ? f.object.end.strftime('%d/%m/%Y:%M:%H') : Date.today.strftime('%d/%m/%Y:%M:%H')), class: 'form-control input-sm end_hidden' %>
-          <%= f.label 'Cor' %>
-          <%= f.select(:color, [['Preto','black'], ['Verde','green'], ['Vermelho','red']], {}, {class: 'form-control'}) %>
+          <%= f.label 'Prioridade' %>
+          <%= f.select(:priority, [['Baixa', 0], ['Média', 1], ['Alta', 2]], {}, {class: 'form-control'}) %>
         </div>
   </div>
   <div class="modal-footer">
