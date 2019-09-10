@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require common/common.min
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
@@ -18,4 +18,10 @@
 //= require fullcalendar
 //= require daterangepicker
 //= require fullcalendar/lang/pt-br
+//= require select2
+//= require custom.min
+//= require settings
+//= require gleek
+//= require styleSwitcher
+//= require bootstrap-daterangepicker/daterangepicker.js
 //= require_tree .
