@@ -18,7 +18,7 @@
 //= require fullcalendar
 //= require daterangepicker
 //= require fullcalendar/lang/pt-br
-//= require select2
+//= require select2-full
 //= require custom.min
 //= require settings
 //= require gleek
