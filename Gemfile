@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
+gem 'rails-controller-testing'
 gem 'rspec-rails', '~> 3.6'
 gem 'sass-rails', '~> 5.0'
 gem "select2-rails"
