@@ -23,11 +23,20 @@
       <%= f.submit "Entrar", class: 'btn login-form__btn submit w-100' %>
     </div>
   <% end %>
-  <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-    <p class="mt-5 login-form__footer">Ainda não tem uma conta?
-      <%= link_to "Inscreva-se agora", new_registration_path(resource_name), class: 'text-primary' %>
-    </p>
-  <% end %>
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <div>Entre com suas redes sociais</div>
+    <%= link_to  user_google_oauth2_omniauth_authorize_path, class: 'btn' do %>
+      <img width="20px" alt="Google &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+    <% end %>
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+      <p class="mt-5 login-form__footer">Ainda não tem uma conta?
+        <%= link_to "Inscreva-se agora", new_registration_path(resource_name), class: 'text-primary' %>
+      </p>
+    <% end %>
+  </div>
 </div>
 
 
