@@ -24,4 +24,5 @@
 //= require gleek
 //= require styleSwitcher
 //= require bootstrap-daterangepicker/daterangepicker.js
+//= require toastr
 //= require_tree .

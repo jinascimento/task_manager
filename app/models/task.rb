@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Task < ApplicationRecord
-  COLOR_BY_PRIORITY = { 0 => 'green', 1 => 'yellow', 2 => 'red' }.freeze
+  COLOR_BY_PRIORITY = { 0 => '#6fd86f', 1 => '#7471F9', 2 => '#FF2A2B' }.freeze
 
   validates :title, :priority, :responsible_id, :start, :end, presence: true
   attr_accessor :date_range

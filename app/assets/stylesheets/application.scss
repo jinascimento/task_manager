@@ -27,3 +27,9 @@
 @import 'bootstrap-daterangepicker/daterangepicker.css';
 @import 'select2';
 @import 'select2-bootstrap';
+@import 'sweetalert2/dist/sweetalert2.min';
+@import "toastr";
+
+.fc-time {
+  display: none;
+}

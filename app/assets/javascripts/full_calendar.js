@@ -14,6 +14,10 @@ initialize_calendar = function() {
             editable: true,
             eventLimit: true,
             events: '/tasks.json',
+            eventRender: function(event, element, view ) {
+                var title = element.find('.fc-title');
+                title.text((moment(event.start).format("HH:mm")) + "h " + event.title);
+            },
 
             select: function(start, end) {
                 $.getScript('/tasks/new', function() {

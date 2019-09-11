@@ -1,8 +1,8 @@
 <div class="row page-titles mx-0">
   <div class="col p-md-0">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
-      <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+      <li class="breadcrumb-item"><a href="javascript:void(0)">Tarefas</a></li>
+      <li class="breadcrumb-item active"><a href="javascript:void(0)">Início</a></li>
     </ol>
   </div>
 </div>
@@ -17,24 +17,17 @@
             <h4>Calendário</h4>
           </div>
           <div class="row">
-            <div class="col-lg-4 mt-5">
-              <%= link_to new_task_path, class: 'btn btn-primary btn-block', remote: true do %>
-                <i class="ti-plus f-s-12 m-r-5"></i> Novo agendamento
-              <% end %>
+            <div class="col-lg-3 mt-5">
               <div id="external-events" class="m-t-20">
-                <p>Ou clique no dia para criar um novo agendamento</p>
-                <div class="external-event bg-primary text-white" data-class="bg-primary"><i class="fa fa-move"></i>New Theme Release</div>
-                <div class="external-event bg-success text-white" data-class="bg-success"><i class="fa fa-move"></i>My Event</div>
-                <div class="external-event bg-warning text-white" data-class="bg-warning"><i class="fa fa-move"></i>Meet manager</div>
-                <div class="external-event bg-dark text-white" data-class="bg-dark"><i class="fa fa-move"></i>Create New theme</div>
+                <p>&nbsp;</p>
+                Gerencie suas tarefas com a utilizacão das prioridades com as cores descritas abaixo!
+                <div class="external-event bg-success text-white" data-class="bg-success"><i class="fa fa-move"></i>Prioridade Baixa</div>
+                <div class="external-event bg-primary text-white" data-class="bg-primary"><i class="fa fa-move"></i>Prioridade Média</div>
+                <div class="external-event bg-danger text-white" data-class="bg-danger"><i class="fa fa-move"></i>Prioridade Alta</div>
               </div>
-              <!-- checkbox -->
-              <div class="checkbox m-t-40">
-                <input id="drop-remove" type="checkbox">
-                <label for="drop-remove">Remove after drop</label>
-              </div>
+
             </div>
-            <div class="col-md-8">
+            <div class="col-md-9">
               <div class="card-box m-b-50">
                 <div class='calendar'></div>
               </div>

@@ -17,6 +17,7 @@ gem 'rspec-rails', '~> 3.6'
 gem 'sass-rails', '~> 5.0'
 gem "select2-rails"
 gem 'turbolinks', '~> 5'
+gem 'toastr-rails'
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do

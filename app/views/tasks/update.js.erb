@@ -1,3 +1,5 @@
+toastr.success('Sua tarefa foi atualizada.', 'Boa!')
+
 $('.calendar').fullCalendar('removeEvents', [<%= @task.id %>]);
 $('.calendar').fullCalendar(
     'renderEvent',
