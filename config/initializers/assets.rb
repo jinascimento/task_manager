@@ -13,7 +13,10 @@ Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg)
 # Precompile additional assets.
 # application.js, application.scss, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w( devise/login.scss )
+Rails.application.config.assets.precompile += %w(
+  devise/login.scss
+
+)
 
 Rails.application.config.assets.precompile += %w(
   common/common.min.js

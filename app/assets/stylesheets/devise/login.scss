@@ -2,3 +2,15 @@
   margin-left: 5px;
   margin-bottom: 0;
 }
+
+.btn-social-networks {
+  border-color: #7471F9;
+}
+
+.social-networks-container, .subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
