@@ -28,7 +28,13 @@
   color: #fff !important;
 }
 
+
+
 @media(max-width: 1024px) {
+  .fc-scroller {
+    height: 100% !important;
+  }
+
   .calendar {
     max-width: 100%;
     margin: 0 auto;
