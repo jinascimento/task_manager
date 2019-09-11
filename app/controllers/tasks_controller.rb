@@ -27,12 +27,12 @@ class TasksController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @task.update(task_params)
-        format.js { render 'tasks/update', status: :ok, location: @task }
-      else
-        format.js { render 'tasks/edit', status: :unprocessable_entity, location: @task }
-      end
+    task_updater = Tasks::TaskUpdater.new(@task, task_params).call
+    @task = task_updater.task
+    if task_updater.success?
+      render 'tasks/update', status: :ok
+    else
+      render 'tasks/edit', status: :unprocessable_entity
     end
   end
 
