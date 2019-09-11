@@ -7,6 +7,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'factory_bot_rails'
+gem 'faker'
 gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'omniauth-google-oauth2', '~> 0.2.2'
