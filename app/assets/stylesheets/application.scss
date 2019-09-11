@@ -27,3 +27,24 @@
 .fc-title {
   color: #fff !important;
 }
+
+@media(max-width: 1024px) {
+  .calendar {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  //Styles added to show Horizontal Scroll Bar
+  .fc-view-container {
+    width: auto;
+  }
+
+  .fc-view-container .fc-view {
+    overflow-x: scroll;
+  }
+
+  .fc-view-container .fc-view > table {
+    width: 2000px;
+  }
+}
+
