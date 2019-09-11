@@ -43,6 +43,12 @@ Os usuários do sistema poderam tanto criar uma nova conta como se logar utiliza
 
 Hospedado aplicação no Heroku por já fornecer grande suporte a aplicações com o framework Rails, facil manutenção e configuração.
 
+4 - Crud de tarefas com o design pattern Service Object
+
+Foi utilizado o Service Object por ser PORO (Plain Old Ruby Objects), sua função é executar apenas uma ação. Respeitando um dos principios do SOLID (S — Single Responsiblity Principle).
+
+Utilizo esse patern para manter o código bem organizado, limpo e de fácil manutenção.
+
 
 ## Configuraçes do ambiente
 
