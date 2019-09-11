@@ -37,7 +37,8 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    @task.destroy
+    task_destroyer = Tasks::TaskDestroyer.new(@task).call
+    @task = task_destroyer.task
     respond_to do |format|
       format.js { render 'tasks/destroy', head: :no_content }
     end
