@@ -1,22 +1,5 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Roboto:400,500,700";
-@import url(asset_path(themify-icons/themify-icons));
-@import url(asset_path(font-awesome/css/font-awesome));
-@import url(asset_path(simple-line-icons/css/simple-line-icons.css));
-@import url(asset_path(weather-icons/css/weather-icons.min.css));
-@import url(asset_path(cryptocoins/css/cryptocoins.css));
-@import url(asset_path(cryptocoins/css/cryptocoins-colors.css));
-@import url(asset_path(linea-icons/linea.css));
-@import url(asset_path(ionicons/css/ionicons.css));
-@import url(asset_path(flag-icon-css/flag-icon.min.css));
-@import url(asset_path(material-design-iconic-font/materialdesignicons.min.css));
-@import url(asset_path(pe-icon-set-weather/css/pe-icon-set-weather.min.css));
-@import url(asset_path(animate/animate.min.css));
-@import url(asset_path(metismenu/css/metisMenu.min.css));
-@import url(asset_path(bootstrap-select/dist/css/bootstrap-select.min.css));
-@import url(asset_path(pg-calendar/css/pignose.calendar.min.css));
-@import url(asset_path(chartist/css/chartist.min.css));
-@import url(asset_path(chartist-plugin-tooltips/css/chartist-plugin-tooltip.css));
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -27,6 +10,26 @@
 The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
+@import url(asset_path(bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker));
+@import url(asset_path(jquery-asColorPicker-master/css/asColorPicker));
+
+@import url(asset_path(bootstrap-daterangepicker/daterangepicker));
+@import 'select2';
+@import 'select2-bootstrap';
+@import "toastr";
+//@import 'font-awesome/css/font-awesome.min';
+@import 'material-design-iconic-font/materialdesignicons.min';
+@import 'animate/animate.min';
+@import 'bootstrap-select/dist/css/bootstrap-select.min';
+@import 'metismenu/css/metisMenu.min';
+@import url(asset_path(themify-icons/themify-icons));
+
+//@import url(asset_path(simple-line-icons/simple-line-icons));
+@import url(asset_path(cryptocoins/css/cryptocoins));
+@import url(asset_path(cryptocoins/css/cryptocoins-colors));
+@import url(asset_path(linea-icons/linea));
+@import url(asset_path(ionicons/css/ionicons));
+@import url(asset_path(pe-icon-set-weather/css/pe-icon-set-weather));
 
 
 

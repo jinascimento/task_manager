@@ -14,8 +14,7 @@ Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif *.svg)
 # application.js, application.scss, and all non-JS/CSS in the app/assets
 # folder are already added.
 Rails.application.config.assets.precompile += %w(
-  devise/login.scss
-
+  devise/login.scss style.scss
 )
 
 Rails.application.config.assets.precompile += %w(

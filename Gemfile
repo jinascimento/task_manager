@@ -20,6 +20,7 @@ gem "select2-rails"
 gem 'turbolinks', '~> 5'
 gem 'toastr-rails'
 gem 'uglifier', '>= 1.3.0'
+gem 'simple-line-icons-rails'
 
 group :development, :test do
   gem 'pry-nav'

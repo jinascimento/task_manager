@@ -19,18 +19,11 @@
 @import 'chartist/css/chartist.min';
 @import 'chartist-plugin-tooltips/css/chartist-plugin-tooltip';
 @import 'fullcalendar/css/fullcalendar.min';
-@import 'bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css';
-@import 'clockpicker/dist/jquery-clockpicker.min.css';
-@import 'jquery-asColorPicker-master/css/asColorPicker.css';
-@import 'bootstrap-datepicker/bootstrap-datepicker.min.css';
-@import 'timepicker/bootstrap-timepicker.min.css';
-@import 'bootstrap-daterangepicker/daterangepicker.css';
-@import 'select2';
-@import 'select2-bootstrap';
-@import 'sweetalert2/dist/sweetalert2.min';
-@import "toastr";
-
-
+@import "simple-line-icons";
 .fc-time {
   display: none;
+}
+
+.fc-title {
+  color: #fff !important;
 }
