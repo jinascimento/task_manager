@@ -17,13 +17,12 @@ class TasksController < ApplicationController
   def edit; end
 
   def create
-    @task = Task.new(task_params)
-    respond_to do |format|
-      if @task.save
-        format.js { render 'tasks/create', status: :created, location: @task }
-      else
-        format.js { render 'tasks/new', status: :unprocessable_entity, location: @task }
-      end
+    task_creator = Tasks::TaskCreator.new(task_params).call
+    @task = task_creator.task
+    if task_creator.success?
+      render 'tasks/create', status: :created
+    else
+      render 'tasks/new', status: :unprocessable_entity
     end
   end
 
