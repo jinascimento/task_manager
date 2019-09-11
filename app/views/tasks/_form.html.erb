@@ -10,13 +10,7 @@
         </div>
         <div class="form-group">
           <%= f.label 'Responsável' %>
-          <select name="task[responsible_id]" id="task_responsible_id" class="form-control">
-            <% Person.all.each do |responsible| %>
-              <option value="<%= responsible.id %>">
-                <%= responsible.name %>
-              </option>
-            <% end %>
-          </select>
+          <%= f.select :responsible_id, Person.all.map {|p| [p.name, p.id ]}, {}, { class: 'form-control', id: 'select2-responsible' } %>
         </div>
         <div class="form-group">
           <%= f.label 'Período' %>
@@ -44,10 +38,10 @@
   <% end %>
 <script type="text/javascript" charset="utf-8">
     $(document).ready(function() {
-        $("#task_responsible_id").select2({
+        $("#select2-responsible").select2({
             placeholder: "Selecione um responsável",
             allowClear: true,
-            theme: "bootstrap"
+            theme: "bootstrap",
         });
     });
 </script>
