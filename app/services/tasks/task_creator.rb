@@ -6,9 +6,12 @@ class Tasks::TaskCreator
 
   def call
     @task = Task.new(@params)
-
-    @task.color = COLOR_BY_PRIORITY[@task.priority.to_sym]
     @task.pending!
+    set_color_by_priority
     OpenStruct.new(success?: @task.save, task: @task, errors: nil)
+  end
+
+  def set_color_by_priority
+    @task.color = COLOR_BY_PRIORITY[@task.priority.to_sym]
   end
 end
