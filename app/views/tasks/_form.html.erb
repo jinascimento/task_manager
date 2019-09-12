@@ -20,7 +20,7 @@
           <%= f.hidden_field :start, value: (f.object.start.present? ? f.object.start.strftime('%d/%m/%Y:%M:%H') : Date.today.strftime('%d/%m/%Y:%M:%H')), class: 'form-control input-sm start_hidden' %>
           <%= f.hidden_field :end, value: (f.object.end.present? ? f.object.end.strftime('%d/%m/%Y:%M:%H') : Date.today.strftime('%d/%m/%Y:%M:%H')), class: 'form-control input-sm end_hidden' %>
           <%= f.label 'Prioridade' %>
-          <%= f.select(:priority, [['Baixa', 0], ['Média', 1], ['Alta', 2]], {}, {class: 'form-control'}) %>
+          <%= f.select(:priority, [['Baixa', 'low'], ['Média', 'medium'], ['Alta', 'high']], {}, {class: 'form-control'}) %>
         </div>
   </div>
   <div class="modal-footer">
