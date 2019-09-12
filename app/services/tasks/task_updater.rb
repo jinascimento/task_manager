@@ -11,6 +11,8 @@ class Tasks::TaskUpdater
   end
 
   def change_color_by_priority
-    @task.color = COLOR_BY_PRIORITY[@params[:priority].to_sym]
+    if @params[:priority]
+      @task.color = COLOR_BY_PRIORITY[@params[:priority].to_sym]
+    end
   end
 end

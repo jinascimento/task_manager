@@ -7,14 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Usuário
-
+puts '********************** Criando usuários **********************'
 10.times do
-  user = User.new(email: 'admin@admin.com', password: '123456', password_confirmation: '123456')
-  user.person = Person.new(name: 'administrador')
+  user = User.new(email: Faker::Internet.email, password: '123456', password_confirmation: '123456')
+  user.person = Person.new(name: Faker::Name.name)
   user.save
 end
 
+puts '********************** Usuários criados! **********************'
 # Tasks
+#
+puts '********************** Criando Tarefas **********************'
 titles = ['Futebol', 'Dentista', 'Médico', 'Almoço em família', 'Cinema', 'Jantar', 'Almoço', 'Pagar boletos', 'Lazer', 'Esportes']
 10.times do |i|
   start_date = DateTime.now + rand(5)
@@ -36,7 +39,7 @@ end
   Tasks::TaskCreator.new(task.attributes).call
 end
 
-
+puts '********************** Tarefas criadas! **********************'
 
 
 
