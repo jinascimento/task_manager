@@ -16,9 +16,20 @@ end
 
 # Tasks
 titles = ['Futebol', 'Dentista', 'Médico', 'Almoço em família', 'Cinema', 'Jantar', 'Almoço', 'Pagar boletos', 'Lazer', 'Esportes']
-20.times do |i|
+10.times do |i|
+  start_date = DateTime.now + rand(5)
   task = Task.new(title: titles.sample, description: Faker::Lorem.sentence,
-                  start: DateTime.now, end: DateTime.now + rand(9),
+                  start: start_date, end: start_date + rand(15),
+                  priority: Task.priorities.keys.sample, responsible: Person.all.sample
+  )
+
+  Tasks::TaskCreator.new(task.attributes).call
+end
+
+10.times do |i|
+  start_date = DateTime.now - rand(5)
+  task = Task.new(title: titles.sample, description: Faker::Lorem.sentence,
+                  start: start_date, end: start_date + rand(15),
                   priority: Task.priorities.keys.sample, responsible: Person.all.sample
   )
 
